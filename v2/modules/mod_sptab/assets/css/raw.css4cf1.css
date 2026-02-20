@@ -1,0 +1,4 @@
+#sptab216 ul.tabs_container {list-style:none;margin: 0!important; padding: 0!important}
+#sptab216 .tabs_buttons{overflow:hidden}
+#sptab216 ul.tabs_container li.tab{float:left;cursor:pointer;padding:0 10px;margin:0}
+#sptab216 .items_mask {position:relative;overflow:hidden}

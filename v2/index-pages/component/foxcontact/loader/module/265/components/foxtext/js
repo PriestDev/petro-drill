@@ -1,0 +1,124 @@
+if (typeof Fox == 'undefined')
+{
+	Fox = {};
+
+	Fox.Strings =
+	{
+		add: function (object)
+		{
+			jQuery.extend(this, object);
+			return this;
+		}
+	};
+
+	Fox.Options =
+	{
+		// Fox.Options.add('key', {...});
+		add: function (key, data)
+		{
+			var o = {};
+			o[key] = data;
+			jQuery.extend(this, o);
+			return this;
+		},
+
+		// Return by copy: Fox.Options.get('key');
+		// Return by reference: Fox.Options['key'];
+		get: function (key)
+		{
+			return jQuery.extend({}, this[key]);
+		}
+	};
+}
+
+
+(function ()
+{
+	Fox.Strings.add(
+		{
+			JCANCEL: "Cancel",
+			COM_FOXCONTACT_BROWSE_FILES: "Browse files",
+			COM_FOXCONTACT_FAILED: "Failed",
+			COM_FOXCONTACT_SUCCESS: "Success",
+			COM_FOXCONTACT_NO_RESULTS_MATCH: "No results match",
+			COM_FOXCONTACT_REMOVE_ALT: "Remove",
+			COM_FOXCONTACT_REMOVE_TITLE: "Remove this file"
+		}
+	);
+
+	Date.monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	Date.dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	Date.monthNumbers = { "January": 0, "February": 1, "March": 2, "April": 3, "May": 4, "June": 5, "July": 6, "August": 7, "September": 8, "October": 9, "November": 10, "December": 11 };
+
+	// Calendar default options
+	Fox.Options.add('calendar', {
+		dayOfWeekStart: JSON.parse("0"),
+		lang: 'dynamic',
+		step: 60,
+		i18n: {
+			dynamic: {
+				months: Date.monthNames,
+				dayOfWeek: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+			}
+		}
+	});
+
+	Fox.Options.add('chosen', {
+		disable_search_threshold: 10,
+		allow_single_deselect: true,
+		no_results_text: Fox.Strings['COM_FOXCONTACT_NO_RESULTS_MATCH']
+	});
+
+})();
+
+
+// Emulate "placeholder" feature on outdated browsers
+jQuery(document).ready(function ($)
+{
+	// Create a new input object, then test if the placeholder attribute is an option inside that object.
+	// It will be an option in browsers that support placeholder text, and absent in those that don’t.
+	if (!('placeholder' in document.createElement('input')))
+	{
+		// Avoid the query string ?_=random at the end of the url
+		$.ajaxSetup({cache: true });
+		$.getScript('/v2' + '/media/com_foxcontact/js/placeholder.min.js');
+	}
+});
+
+
+/* Reset button | Reset input */
+jQuery(document).ready(function ($)
+{
+	if ($('.fox_form .reset-button').length)
+	{
+		// Avoid the query string ?_=random at the end of the url
+		$.ajaxSetup({cache: true });
+		$.getScript('/v2' + '/media/com_foxcontact/js/reset.min.js');
+	}
+});
+
+
+/* Captcha begin */
+function ReloadFCaptcha(id)
+{
+	var image = document.getElementById(id);
+
+	// Generates a unique id with an 8 digits fixed length
+	var uniqueid = Math.floor(Math.random() * Math.pow(10, 8));
+	image.src = image.src.replace(/uniqueid=[0-9]{8}/, "uniqueid=" + uniqueid);
+}
+
+
+function BuildReloadButton(id)
+{
+	document.getElementById(id).src = document.getElementById(id).src.replace("transparent.gif", "reload-16.png");
+}
+/* Captcha end */
+
+/* Enable the following function if you want to enable autofocus to the first input of the first form in the page */
+/*
+ jQuery(document).ready(function ($)
+ {
+ jQuery('.fox_form').find('input[type=text]').filter(':visible:first').focus();
+ });
+ */

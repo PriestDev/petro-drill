@@ -1,0 +1,547 @@
+/* This is not the stylesheet you are looking for...
+ * This resource is dynamically generated based on the file media/com_foxcontact/css/foxcontact.css
+ * It contains statements necessary for the proper display of the form.
+ * You shouldn't modify it. If you really need it, override css rules on your own css instead. */
+
+/* Fix: A bug affecting both twitter bootstrap 2.1 and Joomla Protostar 1.0 template which is derived from bootstrap */
+.control-group.error .checkbox, .control-group.error .radio,
+.control-group.success .checkbox, .control-group.success .radio
+{
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/* Alert boxes */
+div#foxcontainer_m265 div.alert ul
+{
+	list-style-type: none;
+}
+
+/* Fix: issues with some templates */
+div#foxcontainer_m265 div.alert li
+{
+	background: none;
+}
+
+/* Mandatory field marker, Invalid value in field */
+div#foxcontainer_m265 .required, div#foxcontainer_m265 .asterisk
+{
+	color: #b94a48;
+	font-weight: bold;
+}
+
+div#foxcontainer_m265 .required:after, div#foxcontainer_m265 .asterisk:after
+{
+	content: "*";
+}
+
+/* Switch labels and fields to the traditional box model */
+div#foxcontainer_m265 .control-label,
+div#foxcontainer_m265 input,
+div#foxcontainer_m265 label.checkbox,
+div#foxcontainer_m265 textarea,
+div#foxcontainer_m265 .chzn-container-single .chzn-single
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Input boxes and textareas */
+div#foxcontainer_m265 input[type="text"],
+div#foxcontainer_m265 textarea
+{
+	margin: 0; /* Some templates including protostar apply margin-bottom to labels */
+	padding: 4px 5px;
+}
+
+div#foxcontainer_m265 select,
+div#foxcontainer_m265 input[type="text"]
+{
+	height: 28px;
+	line-height: 28px;
+}
+
+/* Captcha reload button */
+div#foxcontainer_m265 div.fcaptcha-reload-container img
+{
+	cursor: pointer;
+}
+
+/* Upload button */
+div#foxcontainer_m265 .qq-upload-button-caption
+{
+	/* Fix: An issue with ie7 */
+	vertical-align: top;
+}
+
+div#foxcontainer_m265 .qq-upload-button-hover
+{
+}
+
+div#foxcontainer_m265 .qq-upload-button-focus
+{
+	outline: 1px dotted black;
+}
+
+/* Upload list */
+div#foxcontainer_m265 ul.qq-upload-list
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+div#foxcontainer_m265 ul.qq-upload-list > li
+{
+	list-style: none;
+}
+
+div#foxcontainer_m265 .qq-upload-list span
+{
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	/* Redundant defaults
+	background-color: transparent;
+	background-attachment:scroll; */
+}
+
+/* Hide Successful and failure messages while uploading  */
+div#foxcontainer_m265 li span.qq-upload-failed-text,
+div#foxcontainer_m265 li span.qq-upload-success-text
+{
+	display: none;
+}
+
+/* Display again Success message when upload is successful and vice versa */
+div#foxcontainer_m265 li.qq-upload-fail span.qq-upload-failed-text,
+div#foxcontainer_m265 li.qq-upload-success span.qq-upload-success-text
+{
+	display: inline-block;
+}
+
+/* Spinner while uploading */
+div#foxcontainer_m265 span.qq-upload-spinner
+{
+	background: url("../../../../../../../../media/com_foxcontact/images/loading.gif");
+	width: 15px;
+	height: 15px;
+	vertical-align: text-bottom;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix: Some templates use background as list style */
+div#foxcontainer_m265 ul.qq-upload-list > li
+{
+	background: none;
+	padding: 0; /* In those cases they usually set a left/right padding in addition */
+}
+
+/* Help text under some fields */
+div#foxcontainer_m265 span.help-block
+{
+	display: block;
+}
+
+/* Built-in captcha */
+div#foxcontainer_m265 .fcaptchafieldcontainer img
+{
+	/* Fix: An IE 8 issue related to some templates where img have max-width:100% */
+	max-width: none;
+}
+
+/* Built-in captcha input box */
+div#foxcontainer_m265 .fcaptchainputcontainer
+{
+	float: left;
+}
+
+/* Reset button */
+div#foxcontainer_m265 .reset-button
+{
+	margin-left: 32px;
+}
+
+/* Chosen select box customizations. Based on media/jui/chosen.css 0.14.0 bundled with Joomla 3.2.3. */
+
+/* Customized background sprite */
+div#foxcontainer_m265 .chzn-container-single .chzn-single div b,
+div#foxcontainer_m265 .chzn-container-single .chzn-search input[type="text"],
+div#foxcontainer_m265 .chzn-container-single .chzn-single abbr,
+div#foxcontainer_m265 .chzn-container-multi .chzn-choices li.search-choice .search-choice-close
+{
+	background-image: url("../../../../../../../../media/com_foxcontact/images/ui.png");
+}
+
+div#foxcontainer_m265 .chzn-container-single .chzn-single div
+{
+	width: 26px;
+}
+
+/* Fix: Joomla implementation of chosen "rtl downward arrow" is partial. The code to move the arrow on the left side is in media/jui/css/bootstrap-rtl.css while it should be in media/jui/css/chosen.css. This way the rtl downward arrow only applies to protostar frontend template, which loads rtl variation of twitter bootstrap. */
+html[dir="rtl"] div#foxcontainer_m265 .chzn-container-single .chzn-single div
+{
+	right: auto;
+	left: 0;
+}
+
+/* Downward arrow */
+div#foxcontainer_m265 .chzn-container-single .chzn-single div b
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+html[dir="rtl"] div#foxcontainer_m265 .chzn-container-single .chzn-single div b
+{
+	background-position: -2px 1px;
+}
+
+/* Upward arrow */
+div#foxcontainer_m265 .chzn-container-active.chzn-with-drop .chzn-single div b
+{
+	background-position: -28px 1px;
+}
+
+html[dir="rtl"] div#foxcontainer_m265 .chzn-container-active.chzn-with-drop .chzn-single div b
+{
+	background-position: -30px 1px;
+}
+
+/* Unselected selector */
+div#foxcontainer_m265 .chzn-container-single .chzn-single
+{
+	/* Customized vertical gradient */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #ffffff), color-stop(100%, #eeeeee));
+	background-image: -webkit-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: -o-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: -ms-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	/* Some templates like beez_20 set font color and background with a high specificity #main a:hover */
+  	color: #555;
+  	background-color: #fff;
+	width: 100%;
+	padding: 0 5px;
+	/* Set the same height than the input fields*/
+	height: 26px;
+	line-height: 26px;
+}
+
+/* Selected selector */
+div#foxcontainer_m265 .chzn-container-active.chzn-with-drop .chzn-single
+{
+  /* The same gradient defined in chosen base, but there it doesn't have enough specificity to be applied */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
+  background-image: -webkit-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: -moz-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: -o-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
+}
+
+/* Set the same width than the input fields */
+div#foxcontainer_m265 .chzn-container
+{
+	/*  */
+	width: 100% !important; /* [!important] We have to override inline values */
+}
+
+/* Search input */
+div#foxcontainer_m265 .chzn-container-single .chzn-search input[type="text"]
+{
+	background-position: 100% -26px;
+	padding: 4px 20px 4px 5px;
+	width: 100%;
+}
+
+/* Fix: Joomla implementation of chosen doesn't support "rtl search input". It behaves exactly like ltr */
+html[dir="rtl"] div#foxcontainer_m265 .chzn-container-single .chzn-search input[type="text"]
+{
+	background-position: -48px -26px;
+	padding: 4px 5px 4px 20px;
+}
+
+/* Close button (X) */
+div#foxcontainer_m265 .chzn-container-single .chzn-single abbr
+{
+	right: 30px;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+div#foxcontainer_m265 .chzn-container-single .chzn-single abbr:hover
+{
+	background-position: right -11px;
+}
+
+/* Fix: Joomla implementation of chosen "rtl X button" is partial. The code to move the X on the left side is in media/jui/css/bootstrap-rtl.css while it should be in media/jui/css/chosen.css. This way the rtl x button only applies to protostar frontend template, which loads rtl variation of twitter bootstrap. */
+html[dir="rtl"] div#foxcontainer_m265 .chzn-container-single .chzn-single abbr
+{
+	right: auto;
+	left: 30px;
+}
+
+/* Close button (X) in Multiple Select layout */
+div#foxcontainer_m265 .chzn-container-multi .chzn-choices li.search-choice .search-choice-close
+{
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+/* Some statements from the basic css need a higher specificity { */
+div#foxcontainer_m265 .chzn-container .chzn-results li
+{
+  line-height: 15px;
+  padding: 5px 6px;
+  margin: 0;
+  list-style: none;
+  background: none; /* Fix { Some templates use background as list style } */
+}
+
+div#foxcontainer_m265 .chzn-container .chzn-results li.highlighted
+{
+  background-color: #3875d7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+}
+/* } */
+
+/* Asterisks (*name:value) and backslash 9 (name:value\9) are IE hacks made by twitter bootstrap. */
+/* Twitter bootstrap buttons */
+div#foxcontainer_m265 .btn
+{
+	display: inline-block;
+	*display: inline;
+	margin-bottom: 0;
+	*margin-left: .3em;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	*background-color: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #bbbbbb;
+	*border: 0;
+	border-color: #c5c5c5;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #a2a2a2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffffff', endColorstr = '#ffe6e6e6', GradientType = 0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	*zoom: 1;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* button when mouse hover */
+div#foxcontainer_m265 .btn:hover
+{
+	/* A lot of bad written Joomla templates force a white font with !important */
+	color: #333333 !important;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	*background-color: #d9d9d9; /* Buttons in IE7 don't get borders, so darken on hover */
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+
+div#foxcontainer_m265 .btn:first-child
+{
+	*margin-left: 0;
+}
+
+div#foxcontainer_m265 button.btn,
+div#foxcontainer_m265 input[type="submit"].btn
+{
+	*padding-top: 3px;
+	*padding-bottom: 3px;
+}
+
+div#foxcontainer_m265 button.btn::-moz-focus-inner,
+div#foxcontainer_m265 input[type="submit"].btn::-moz-focus-inner
+{
+	padding: 0;
+	border: 0;
+}
+
+div#foxcontainer_m265 label
+{
+	display: block;
+}
+
+div#foxcontainer_m265 .foxform-inline .control-group label
+{
+	display: inline-block;
+}
+
+div#foxcontainer_m265 input[type="radio"],
+div#foxcontainer_m265 input[type="checkbox"]
+{
+	margin: 4px 0 0;
+	margin-top: 1px  \9;
+	*margin-top: 0;
+	line-height: normal;
+	cursor: pointer;
+}
+
+div#foxcontainer_m265 input[type="file"],
+div#foxcontainer_m265 input[type="image"],
+div#foxcontainer_m265 input[type="submit"],
+div#foxcontainer_m265 input[type="reset"],
+div#foxcontainer_m265 input[type="button"],
+div#foxcontainer_m265 input[type="radio"],
+div#foxcontainer_m265 input[type="checkbox"]
+{
+	width: auto;
+}
+
+div#foxcontainer_m265 input,
+div#foxcontainer_m265 label.checkbox
+{
+	width: 100%;
+}
+
+div#foxcontainer_m265 textarea
+{
+	width: 100%;
+	height: 180px;
+}
+
+/* Standard select used as fallback under some circumstances */
+div#foxcontainer_m265 select
+{
+	/*  */
+	width: 100%;
+}
+
+/* form elements based on form type */
+div#foxcontainer_m265 .foxform-compact .control-group,
+div#foxcontainer_m265 .foxform-extended .control-group
+{
+	/* can't use overflow:hidden; due to "Chosen" dropdown select boxes. Fallback to float:left alternative, but it needs width:100% */
+	float: left;
+	width:100%;
+	*zoom: 1;
+}
+
+div#foxcontainer_m265 .foxform-inline .control-group
+{
+	display: inline-block;
+}
+
+/* Field labels */
+div#foxcontainer_m265 .control-label
+{
+	margin: 0; /* Some templates including protostar apply margin-bottom to labels */
+	min-height: 28px;
+	line-height: 28px;
+}
+
+div#foxcontainer_m265 .foxform-compact .control-label,
+div#foxcontainer_m265 .foxform-extended .control-label
+{
+	float: left;
+	width: 75%;
+}
+
+div#foxcontainer_m265 .foxform-extended .control-label
+{
+	text-align: left;
+	padding-right: 16px;
+}
+
+div#foxcontainer_m265 .foxform-compact .control-label
+{
+	text-align: right;
+	padding-right: 16px;
+}
+
+/* Fields container */
+div#foxcontainer_m265 .foxform-compact .controls,
+div#foxcontainer_m265 .foxform-extended .controls
+{
+	float: left;
+}
+
+div#foxcontainer_m265 .foxform-centered .control-label,
+div#foxcontainer_m265 .foxform-centered .controls.buttons, /* Buttons container */
+div#foxcontainer_m265 .foxform-centered .qq-uploader,
+div#foxcontainer_m265 .foxform-centered .help-block
+{
+	text-align: center;
+}
+
+div#foxcontainer_m265 .foxform-centered input,
+div#foxcontainer_m265 .foxform-centered textarea,
+div#foxcontainer_m265 .foxform-centered label.checkbox,
+div#foxcontainer_m265 .foxform-centered .chzn-container
+{
+	display: block;
+	margin: 0 auto;
+}
+
+/* Checkbox and radio center alignment and text indentation */
+div#foxcontainer_m265 .radio,
+div#foxcontainer_m265 .checkbox
+{
+	min-height: 20px;
+	padding-left: 20px;
+}
+
+div#foxcontainer_m265 .radio input[type="radio"],
+div#foxcontainer_m265 .checkbox input[type="checkbox"]
+{
+	float: left;
+	margin-left: -20px;
+}
+
+div#foxcontainer_m265 .controls
+{
+	/* Removes the 180px left margin set by bootstrap */
+	margin: 0;
+	/* Fix: dropdown collapse with layout extended in the module, but hurts the view of the component */
+	/*width: 100%;*/
+
+	/**/
+}
+
+div#foxcontainer_m265 .foxform-inline .controls
+{
+	display:	inline-block;
+}
+
+/**/
+
+/**/
+
+/**/
+
+div#foxcontainer_m265 input.foxcalendar
+{
+	cursor: pointer;
+	/* Prevent selection in order to avoid backspace which would take the page back */
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}

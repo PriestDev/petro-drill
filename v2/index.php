@@ -30,79 +30,66 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
     <script src="modules/mod_sptab/assets/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
     <script src="modules/mod_sptab/assets/js/sptab.js" type="text/javascript"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-57149898-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-57149898-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Universal Google Analytics Plugin by PB Web Development -->
+
     <style>
         /* Logo styling - display logo in navbar */
-		#sp-logo { display:flex; align-items:center; }
-		#sp-logo .logo-wrapper { display:flex; align-items:center; }
-		#sp-logo .logo { background-image:url('templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
+        #sp-logo { display:flex; align-items:center; }
+        #sp-logo .logo-wrapper { display:flex; align-items:center; }
+        #sp-logo .logo { background-image:url('templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
+        /* hide search bar */
+        #sp-search { display: none !important; }
     </style>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-57149898-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <!-- Universal Google Analytics Plugin by PB Web Development -->
-
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-57149898-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <!-- Universal Google Analytics Plugin by PB Web Development -->
 
 
 </head>
 
 <body class="featured homepage  ltr preset3 menu-home responsive bg hfeed clearfix">
     <div class="body-innerwrapper">
-        <!--[if lt IE 8]>
-        <div class="chromeframe alert alert-danger" style="text-align:center">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
-        <![endif]-->
-        <header id="sp-header-wrapper">
-            <div class="container">
-                <div id="sp-logo">
-                    <a href="https://petrodrill-global.com/v2" class="logo-wrapper">
-                        <div class="logo"></div>
-                    </a>
-                </div>
-
-                <div id="sp-top-info">
-                    <ul class="social-icons">
-                        <li><a target="_blank" href="https://www.facebook.com/petrodrillglobal" title="Facebook"><i class="icon-facebook"></i></a></li>
-                        <li><a target="_blank" href="https://twitter.com/petrodrillglobal" title="Twitter"><i class="icon-twitter"></i></a></li>
-                        <li><a target="_blank" href="https://plus.google.com/u/0/104959331757126810588/posts" title="Google+"><i class="icon-google-plus"></i></a></li>
-                        <li><a target="_blank" href="#" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
-                        <li><a target="_blank" href="#" title="Dribbble"><i class="icon-dribbble"></i></a></li>
-                        <li><a target="_blank" href="#" title="YouTube"><i class="icon-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+      
+       
         <section id="sp-menu-wrapper">
             <div class="container">
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
+                <div id="sp-logo">
+                    <a href="" class="logo-wrapper">
+                        <div class="logo"></div>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="sp-main-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
                 <nav id="sp-main-menu">
-                    <ul class="sp-menu">
+                    <ul class="sp-menu" id="mainMenuList">
                         <li class="menu-item active"><a href="./" title="Home">Home</a></li>
                         <li class="menu-item"><a href="index-pages/about.html" title="About">About</a></li>
                         <li class="menu-item"><a href="index-pages/exploration.html" title="Exploration">Exploration</a></li>
@@ -112,9 +99,8 @@
                         <li class="menu-item"><a href="index-pages/contact.html" title="Contact">Contact Us</a></li>
                     </ul>
                 </nav>
-
                 <div id="sp-search">
-                    <form action="https://petrodrill-global.com/v2/index.php" method="post" class="search-form">
+                    <form action="./" method="post" class="search-form">
                         <div class="search-wrapper">
                             <input type="text" name="searchword" id="mod-search-searchword" placeholder="Search..." class="search-input" />
                             <button type="submit" class="search-btn" title="Search">
@@ -126,7 +112,7 @@
                         <input type="hidden" name="Itemid" value="0" />
                     </form>
                 </div>
-            </div>
+            </div> 
         </section>
         <section id="sp-slider-wrapper">
             <div class="slider-container">
@@ -335,7 +321,9 @@
                         <a href="#" class="cta-btn cta-btn-secondary">Contact Us</a>
                     </div>
                 </div>
-                <div class="cta-accent"></div>
+                <!-- <div class="cta-accent" style="display:flex;align-items:center;justify-content:center;">
+                    <i class="icon-envelope" style="font-size:64px;color:#f59e0b;"></i>
+                </div> -->
             </div>
         </section>
         <section id="sp-testimonial-wrapper">
@@ -414,7 +402,7 @@
                         <h3>Newsletter</h3>
                         <p>Subscribe to stay updated with the latest news.</p>
                         <form id="formAcymailing90781"
-                            action="https://petrodrill-global.com/v2/index.php"
+                            action="./"
                             onsubmit="return submitacymailingform('optin','formAcymailing90781')"
                             method="post" name="formAcymailing90781">
                             <div class="newsletter-form">
@@ -454,7 +442,7 @@
 
         <div class="hidden-desktop sp-mobile-menu nav-collapse collapse">
             <ul class="">
-                <li class="menu-item active first"><a href="index.html" class="menu-item active first"><span
+                <li class="menu-item active first"><a href="./" class="menu-item active first"><span
                             class="menu"><span class="menu-title">Home</span></span></a></li>
                 <li class="menu-item"><a href="index-pages/about.html" class="menu-item"><span class="menu"><span
                                 class="menu-title">About</span></span></a></li>

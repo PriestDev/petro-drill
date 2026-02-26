@@ -45,7 +45,8 @@
 		#sp-logo { display:flex; align-items:center; }
 		#sp-logo .logo-wrapper { display:flex; align-items:center; }
 		#sp-logo .logo { background-image:url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
-		
+		/* hide search bar */
+		#sp-search { display: none !important; }
 	</style>
 	<script type="text/javascript">
 		jQuery(window).on('load', function () {
@@ -74,38 +75,20 @@
 
 <body class="article subpage ltr preset3 menu-about responsive bg hfeed clearfix">
 	<div class="body-innerwrapper">
-		<!--[if lt IE 8]>
-		<div class="chromeframe alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
-		<![endif]-->
-
-		<header id="sp-header-wrapper">
-			<div class="container">
-				<div id="sp-logo">
-					<a href="https://petrodrill-global.com/v2" class="logo-wrapper">
-						<div class="logo"></div>
-					</a>
-				</div>
-
-				<div id="sp-top-info">
-					<ul class="social-icons">
-						<li><a target="_blank" href="https://www.facebook.com/petrodrillglobal" title="Facebook"><i class="icon-facebook"></i></a></li>
-						<li><a target="_blank" href="https://twitter.com/petrodrillglobal" title="Twitter"><i class="icon-twitter"></i></a></li>
-						<li><a target="_blank" href="https://plus.google.com/u/0/104959331757126810588/posts" title="Google+"><i class="icon-google-plus"></i></a></li>
-						<li><a target="_blank" href="#" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
-						<li><a target="_blank" href="#" title="Dribbble"><i class="icon-dribbble"></i></a></li>
-						<li><a target="_blank" href="#" title="YouTube"><i class="icon-youtube"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
 
 		<section id="sp-menu-wrapper">
 			<div class="container">
-				<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+
+				<div id="sp-logo">
+					<a href="../" class="logo-wrapper">
+						<div class="logo"></div>
+					</a>
+					<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
 				
 				<nav id="sp-main-menu">
 					<ul class="sp-menu">
@@ -120,7 +103,7 @@
 				</nav>
 
 				<div id="sp-search">
-					<form action="https://petrodrill-global.com/v2/index.php/about" method="post" class="search-form">
+					<form action="about.html" method="post" class="search-form">
 						<div class="search-wrapper">
 							<input type="text" name="searchword" id="mod-search-searchword" placeholder="Search..." class="search-input" />
 							<button type="submit" class="search-btn" title="Search">
@@ -276,7 +259,11 @@
 						</ul>
 					</div>
 
-					<div id="sp-go-to-top"><a class="sp-totop" href="javascript:;" title="Back to Top" rel="nofollow"><i class="icon-angle-up"></i></a></div>
+					<div id="sp-go-to-top">
+						<a class="sp-totop" href="javascript:;" title="Back to Top" rel="nofollow">
+							<i class="icon-angle-up"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -315,7 +302,7 @@
 						<h3>Newsletter</h3>
 						<p>Subscribe to stay updated with the latest news.</p>
 						<form id="formAcymailing90781"
-							action="https://petrodrill-global.com/v2/index.php/about"
+							action="about.html"
 							onsubmit="return submitacymailingform('optin','formAcymailing90781')"
 							method="post" name="formAcymailing90781">
 							<div class="newsletter-form">

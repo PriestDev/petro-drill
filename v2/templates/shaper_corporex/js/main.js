@@ -10,30 +10,85 @@ acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
 acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
 acymailing['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';
 
+// Ensure hamburger visibility early so CSS or plugin errors don't hide it
+document.addEventListener('DOMContentLoaded', function() {
+	try {
+		var earlyToggle = document.getElementById('menuToggle');
+		if (earlyToggle) {
+			earlyToggle.style.setProperty('display', 'inline-flex', 'important');
+			earlyToggle.style.setProperty('z-index', '12000', 'important');
+			earlyToggle.style.setProperty('visibility', 'visible', 'important');
+			earlyToggle.style.setProperty('opacity', '1', 'important');
+			earlyToggle.setAttribute('aria-expanded', 'false');
+		}
+	} catch (e) {
+		console.warn('Early menuToggle visibility set failed', e);
+	}
+
+	// Unified Responsive Menu Toggle Logic (for all pages)
+	var menuToggle = document.getElementById('menuToggle');
+	var mainMenuNav = document.getElementById('sp-main-menu');
+	if (menuToggle && mainMenuNav) {
+		menuToggle.addEventListener('click', function(e) {
+			e.stopPropagation();
+			mainMenuNav.classList.toggle('open');
+			menuToggle.setAttribute('aria-expanded', mainMenuNav.classList.contains('open'));
+		});
+	}
+	// Close menu when clicking outside (mobile only)
+	document.addEventListener('click', function(e) {
+		if (mainMenuNav && menuToggle && window.innerWidth <= 900) {
+			if (!mainMenuNav.contains(e.target) && !menuToggle.contains(e.target)) {
+				mainMenuNav.classList.remove('open');
+				menuToggle.setAttribute('aria-expanded', 'false');
+			}
+		}
+	});
+	// Close menu on resize if desktop
+	window.addEventListener('resize', function() {
+		if (mainMenuNav && window.innerWidth > 900) {
+			mainMenuNav.classList.remove('open');
+			menuToggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+});
+
 jQuery(function($){
 	/* ====================================
 	   MAIN MENU INITIALIZATION
 	   ==================================== */
 	function mainmenu() {
-		$('.sp-menu').spmenu({
-			startLevel: 0,
-			direction: 'ltr',
-			initOffset: {
-				x: 0,
-				y: 15
-			},
-			subOffset: {
-				x: 0,
-				y: 0
-			},
-			center: 0
-		});
+		try {
+			if ($ && $.fn && typeof $.fn.spmenu === 'function') {
+				$('.sp-menu').spmenu({
+					startLevel: 0,
+					direction: 'ltr',
+					initOffset: {
+						x: 0,
+						y: 15
+					},
+					subOffset: {
+						x: 0,
+						y: 0
+					},
+					center: 0
+				});
+			} else {
+				// plugin missing: fall back to simple horizontal layout to avoid script error
+				$('.sp-menu').css({display: 'flex'});
+				console.warn('spmenu plugin not found — using fallback layout');
+			}
+		} catch (err) {
+			console.warn('Error initializing main menu', err);
+			try { $('.sp-menu').css({display: 'flex'}); } catch(e){}
+		}
 	}
 
-	mainmenu();
+	// run safely and on resize
+	try { mainmenu(); } catch (e) { console.warn('mainmenu initial run failed', e); }
 
 	$(window).on('resize', function () {
-		mainmenu();
+		try { mainmenu(); } catch (e) { console.warn('mainmenu resize failed', e); }
 	});
 
 	$(window).on('scroll', function(){
@@ -255,40 +310,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-/* ====================================
-   RESPONSIVE MENU TOGGLE
-   ==================================== */
-document.addEventListener('DOMContentLoaded', function() {
-	var menuToggle = document.getElementById('menuToggle');
-	var mainMenu = document.getElementById('sp-main-menu');
-	var menuItems = mainMenu ? mainMenu.querySelectorAll('a') : [];
-	
-	// Toggle menu when hamburger is clicked
-	if (menuToggle) {
-		menuToggle.addEventListener('click', function(e) {
-			e.stopPropagation();
-			menuToggle.classList.toggle('active');
-			mainMenu.classList.toggle('active');
-		});
-	}
-	
-	// Close menu when a menu item is clicked
-	menuItems.forEach(function(item) {
-		item.addEventListener('click', function() {
-			if (window.innerWidth <= 768) {
-				menuToggle.classList.remove('active');
-				mainMenu.classList.remove('active');
-			}
-		});
-	});
-	
-	// Close menu when clicking outside
-	document.addEventListener('click', function(e) {
-		if (window.innerWidth <= 768) {
-			if (!e.target.closest('#sp-menu-wrapper')) {
-				menuToggle.classList.remove('active');
-				mainMenu.classList.remove('active');
-			}
-		}
-	});
-});
+// (Unified Responsive Menu Toggle logic is now above, merged for all pages)

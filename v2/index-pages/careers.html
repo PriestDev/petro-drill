@@ -26,156 +26,6 @@
 	<link rel="stylesheet" href="../templates/shaper_corporex/css/template.css" type="text/css" />
 	<link rel="stylesheet" href="../templates/shaper_corporex/css/presets/preset3.css" type="text/css" />
 	<link rel="stylesheet" href="../media/com_acymailing/css/module_defaultb54b.css?v=1771269546" type="text/css" />
-	<style type="text/css">
-		.container { max-width: 1170px; }
-
-		body, p { font-family: 'Raleway'; }
-		h1, h2, h3, h4 { font-family: 'Raleway'; }
-
-		/* Layout & spacing: add side padding so content isn't flush to edges */
-		.container { padding: 0 100px !important; max-width:100% !important; width:100% !important; margin:0 auto; }
-
-		/* Theme variables */
-		:root{ --primary:#1e3a8a; --primary-light:#3b82f6; --secondary:#f59e0b; --dark:#1f2937; --gray-light:#f3f4f6; }
-
-		/* Page header style to align with index.php */
-		.page-header h2{ font-size:2rem; color:var(--primary); margin-bottom:15px; border-bottom:3px solid var(--secondary); padding-bottom:10px; display:inline-block; }
-
-		/* Article readability */
-		.item-page p, .item-page td { color:#555; line-height:1.8; font-size:1rem; }
-
-		/* Ensure images scale on smaller screens */
-		.item-page img { max-width:100%; height:auto; display:block; }
-
-		/* Responsive breakpoints */
-		@media (max-width: 992px) { .container{ padding:0 50px !important; } .page-header h2{ font-size:1.6rem; } }
-		@media (max-width: 600px) { .container{ padding:0 24px !important; } .page-header h2{ font-size:1.4rem; } }
-
-		#sp-menu-wrapper { margin: 0 0 50px 0 !important; }
-		#sp-subheader-wrapper{ margin: -51px 0 50px 0 !important; }
-		#sp-main-body-wrapper { background: rgba(246, 180, 74, 0) !important; }
-
-		/* Bottom area / footer: align with homepage design */
-		#sp-bottom-wrapper, #sp-footer-wrapper { background: linear-gradient(135deg, var(--dark) 0%, #263549 100%); color: #ffffff; padding: 60px 0 !important; width:100% !important; margin:0 !important; }
-		#sp-bottom-wrapper .container, #sp-footer-wrapper .container{ padding: 0 100px !important; max-width:1400px !important; margin:0 auto !important; }
-		#sp-bottom-wrapper .mod-wrapper-flat, #sp-bottom-wrapper .mod-wrapper, #sp-bottom-wrapper .module, #sp-footer-wrapper .mod-wrapper-flat{ background: transparent !important; box-shadow: none !important; border: 0 !important; }
-		#sp-bottom-wrapper .module-title, #sp-footer-wrapper .module-title { color: #ffffff !important; text-transform: uppercase; font-weight:700; letter-spacing:1px; margin-bottom:18px; position:relative; }
-		#sp-bottom-wrapper .module-title:after, #sp-footer-wrapper .module-title:after { content: ''; display:block; width:80px; height:6px; background: linear-gradient(90deg, var(--secondary), var(--primary-light)); margin-top:8px; border-radius:4px; }
-		#sp-bottom-wrapper ul, #sp-footer-wrapper ul { list-style:none; padding:0; margin:0; }
-		#sp-bottom-wrapper ul li, #sp-footer-wrapper ul li { margin-bottom:12px; }
-		#sp-bottom-wrapper ul li a, #sp-footer-wrapper ul li a { color: rgba(255,255,255,0.92); text-decoration:none; }
-		#sp-bottom-wrapper .newsletter .inputbox, #sp-footer-wrapper .newsletter .inputbox { width:100%; padding:10px; border-radius:3px; border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); color:#fff; }
-		#sp-bottom-wrapper .button, #sp-footer-wrapper .button { background: var(--primary-light) !important; border:none; color:#fff !important; }
-		@media (max-width: 992px){ #sp-bottom-wrapper .container, #sp-footer-wrapper .container{ padding:0 50px !important;} }
-
-		/* Force removal of any white backgrounds inside bottom area and ensure white text */
-		#sp-bottom-wrapper #bottom, #sp-bottom-wrapper #bottom .row-fluid, #sp-bottom-wrapper #bottom > .container { background: transparent !important; color: #ffffff !important; }
-		#sp-bottom-wrapper #bottom .custom, #sp-bottom-wrapper #bottom .mod-wrapper-flat, #sp-bottom-wrapper #bottom .module, #sp-bottom-wrapper #bottom .mod-wrapper { background: transparent !important; box-shadow: none !important; border:0 !important; color:#ffffff !important; }
-		#sp-bottom-wrapper #bottom .span3 { background: transparent !important; }
-		#sp-bottom-wrapper #bottom ul { list-style:none; padding:0; margin:0; }
-		#sp-bottom-wrapper #bottom li { margin-bottom:12px; }
-		#sp-bottom-wrapper #bottom a { color: rgba(255,255,255,0.95) !important; text-decoration:none !important; }
-		#sp-bottom-wrapper #bottom .module-title, #sp-bottom-wrapper #bottom .module-title:after { color:#fff !important; }
-		#sp-bottom-wrapper #bottom .inputbox { background: rgba(255,255,255,0.04) !important; color:#fff !important; border:1px solid rgba(255,255,255,0.12) !important; }
-
-		/* Minimal hamburger styles to visually match homepage */
-		.menu-toggle{ display:none; background:transparent; border:0; width:42px; height:36px; padding:6px; cursor:pointer; align-items:center; justify-content:center; }
-		.menu-toggle span{ display:block; width:100%; height:3px; background:var(--dark); border-radius:2px; margin:4px 0; }
-		@media (max-width: 768px){ .menu-toggle{ display:flex; } .hidden-desktop.sp-mobile-menu{ display:block !important; } }
-
-		/* Content styling - professional redesign */
-		.item-page h3{ color:var(--primary); font-size:1.35rem; margin:32px 0 16px 0; font-weight:700; border-bottom:3px solid var(--secondary); padding-bottom:10px; display:inline-block; }
-		.item-page h4{ color:var(--primary); font-size:1.15rem; margin:16px 0 12px 0; font-weight:700; }
-		.item-page p{ margin:12px 0; line-height:1.8; }
-		.item-page strong{ color:var(--primary); font-weight:700; }
-
-		/* Enhanced content spacing and styling */
-		.item-page > p:first-of-type{ margin-top:0; }
-		.item-page img{ border-radius:8px; margin:20px 0; box-shadow: 0 4px 16px rgba(31,41,55,0.1); transition:transform .2s ease, box-shadow .2s ease; }
-		.item-page img:hover{ transform:scale(1.02); box-shadow: 0 8px 24px rgba(31,41,55,0.15); }
-
-		/* List styling */
-		.item-page ul, .item-page ol { margin:16px 0 16px 24px; }
-		.item-page li { margin-bottom:12px; line-height:1.8; }
-
-		/* Form styling for careers applications - Professional redesign */
-		.foxcontainer { background: #f9fafb; padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; margin: 30px 0; box-shadow: 0 4px 20px rgba(30, 58, 138, 0.08); }
-		.foxcontainer h2 { color: var(--primary); font-size: 2rem; margin-bottom: 20px; border-bottom: 3px solid var(--secondary); padding-bottom: 15px; display: inline-block; }
-		
-		/* Form structure and layout */
-		.fox_form.foxform-stacked { display: flex; flex-direction: column; }
-		.control-group { margin-bottom: 24px; display: flex; flex-direction: column; }
-		
-		/* Instructions box styling */
-		#mid_265-customhtml0 { background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(155, 89, 182, 0.05) 100%); border-left: 4px solid var(--primary-light); padding: 16px; border-radius: 6px; margin-bottom: 24px; }
-		#mid_265-customhtml0 .controls div { color: #333; font-size: 0.95rem; line-height: 1.6; }
-		#mid_265-customhtml0 b { color: var(--primary); font-weight: 700; }
-		
-		/* Label styling */
-		.control-label { color: var(--primary); font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; display: block; }
-		.required { color: #dc2626; margin-left: 2px; font-weight: 700; }
-		
-		/* Input field styling */
-		.controls input[type="text"], .controls input[type="email"], .controls input[type="number"], 
-		.controls select, .controls textarea { width: 100%; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 8px; font-family: 'Raleway', sans-serif; font-size: 0.95rem; color: #374151; background: #ffffff; box-sizing: border-box; transition: all 0.2s ease; }
-		
-		/* Focus and hover states */
-		.controls input[type="text"]:focus, .controls input[type="email"]:focus, .controls input[type="number"]:focus,
-		.controls select:focus, .controls textarea:focus { border-color: var(--primary-light); background: #ffffff; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); outline: none; }
-		
-		.controls input[type="text"]:hover, .controls input[type="email"]:hover, .controls input[type="number"]:hover,
-		.controls select:hover, .controls textarea:hover { border-color: var(--primary); }
-		
-		/* Textarea specific */
-		.controls textarea { resize: vertical; min-height: 120px; line-height: 1.5; }
-		
-		/* Checkbox styling */
-		.controls label.checkbox { display: flex; align-items: center; font-weight: 400; color: #555; margin-top: 8px; }
-		.controls label.checkbox input[type="checkbox"] { width: 18px; height: 18px; margin-right: 10px; cursor: pointer; accent-color: var(--primary-light); }
-		
-		/* File upload box styling */
-		#foxupload_mid_265 { margin: 16px 0; }
-		.qq-uploader { background: linear-gradient(135deg, #f0f9ff 0%, #f3e8ff 100%); border: 2px dashed var(--primary-light); border-radius: 8px; padding: 20px; text-align: center; }
-		.qq-upload-button { background: var(--primary-light) !important; color: #fff !important; border: none !important; border-radius: 6px !important; padding: 10px 24px !important; font-weight: 600 !important; cursor: pointer !important; transition: all 0.2s ease !important; }
-		.qq-upload-button:hover { background: var(--primary) !important; transform: translateY(-1px) !important; }
-		.help-block { color: #6b7280; font-size: 0.85rem; margin-top: 8px; display: block; }
-		
-		/* Privacy policy section styling */
-		#mid_265-customhtml1 { background: #fef3c7; border-left: 4px solid var(--secondary); padding: 14px; border-radius: 6px; margin: 16px 0; }
-		#mid_265-customhtml1 .controls div { color: #92400e; font-size: 0.9rem; }
-		
-		/* Submit button styling */
-		#mid_265-buttons { margin-top: 32px; }
-		.submit-button, .btn.btn-success { background: linear-gradient(135deg, var(--primary-light) 0%, #1e40af 100%) !important; color: #fff !important; padding: 14px 48px !important; border: none !important; border-radius: 8px !important; font-weight: 600 !important; font-size: 1rem !important; cursor: pointer !important; transition: all 0.2s ease !important; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important; }
-		.submit-button:hover, .btn.btn-success:hover { background: linear-gradient(135deg, var(--primary) 0%, #1e3a8a 100%) !important; transform: translateY(-2px) !important; box-shadow: 0 8px 24px rgba(30, 58, 138, 0.4) !important; }
-		.submit-button:active, .btn.btn-success:active { transform: translateY(0) !important; }
-		
-		/* Upload list styling */
-		.qq-upload-list { list-style: none; margin-top: 12px; padding: 0; }
-		.qq-upload-list li { background: #fff; padding: 10px 14px; margin: 6px 0; border-radius: 6px; border: 1px solid #e5e7eb; font-size: 0.9rem; color: #333; }
-		
-		/* Form group spacing */
-		.controls { margin-top: 0; }
-		
-		/* Foxcontact specific selectors (fallback) */
-		.foxcontact-label { color: var(--primary); font-weight: 600; display: block; margin-top: 16px; margin-bottom: 8px; }
-		.foxcontact-input, .foxcontact-select, .foxcontact-textarea { width: 100%; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 8px; font-family: 'Raleway'; font-size: 0.95rem; box-sizing: border-box; color: #374151; background: #ffffff; }
-		.foxcontact-input:focus, .foxcontact-select:focus, .foxcontact-textarea:focus { border-color: var(--primary-light); box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); outline: none; }
-		.foxcontact-button { background: linear-gradient(135deg, var(--primary-light) 0%, #1e40af 100%) !important; color: #fff !important; padding: 14px 48px !important; border: none !important; border-radius: 8px !important; font-weight: 600 !important; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25); }
-		.foxcontact-button:hover { background: linear-gradient(135deg, var(--primary) 0%, #1e3a8a 100%) !important; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(30, 58, 138, 0.4); }
-
-		/* Logo styling - display logo in navbar */
-		#sp-logo { display:flex; align-items:center; }
-		#sp-logo .logo-wrapper { display:flex; align-items:center; }
-		#sp-logo .logo { background-image:url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
-
-		/* Responsive adjustments */
-		@media (max-width: 600px) {
-			.item-page h3{ font-size:1.2rem; }
-			.item-page h4{ font-size:1rem; }
-			.item-page ul, .item-page ol { margin:16px 0 16px 18px; }
-		}
-	</style>
 	<script src="../media/system/js/mootools-core.js" type="text/javascript"></script>
 	<script src="../media/jui/js/jquery.min.js" type="text/javascript"></script>
 	<script src="../media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
@@ -195,153 +45,77 @@
 	<script src="../templates/shaper_corporex/js/jquery.inview.min.js" type="text/javascript"></script>
 	<script src="../templates/shaper_corporex/js/main.js" type="text/javascript"></script>
 	<script src="../media/com_acymailing/js/acymailing_module83f3.js?v=462" type="text/javascript"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function () { CreateUploadButton('foxupload_mid_265', 'module', 265, '/v2/index.php/component/foxcontact/loader/module/265/none/none/uploader'); });
+	<style>
+		/* Logo styling - display logo in navbar */
+		#sp-logo {
+			display: flex;
+			align-items: center;
+		}
 
-		jQuery(window).on('load', function () {
-			new JCaption('img.caption');
-		});
-		spnoConflict(function ($) {
+		#sp-logo .logo-wrapper {
+			display: flex;
+			align-items: center;
+		}
 
-			function mainmenu() {
-				$('.sp-menu').spmenu({
-					startLevel: 0,
-					direction: 'ltr',
-					initOffset: {
-						x: 0,
-						y: 15
-					},
-					subOffset: {
-						x: 0,
-						y: 0
-					},
-					center: 0
-				});
-			}
+		#sp-logo .logo {
+			background-image: url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: left center;
+			display: block;
+			width: 280px !important;
+			height: 80px !important;
+			margin-right: 20px;
+		}
 
-			mainmenu();
-
-			$(window).on('resize', function () {
-				mainmenu();
-			});
-
-
-		});
-		var acymailing = Array();
-		acymailing['NAMECAPTION'] = 'Name';
-		acymailing['NAME_MISSING'] = 'Please enter your name';
-		acymailing['EMAILCAPTION'] = 'E-mail';
-		acymailing['VALID_EMAIL'] = 'Please enter a valid e-mail address';
-		acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
-		acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
-		acymailing['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';
-
-	</script>
-
-
-
-
-
-
-
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-57149898-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
-	<!-- Universal Google Analytics Plugin by PB Web Development -->
-
-
+		/* hide search bar */
+		#sp-search {
+			display: none !important;
+		}
+	</style>
 </head>
 
 <body class="article subpage  ltr preset3 menu-careers responsive bg hfeed clearfix">
 	<div class="body-innerwrapper">
-		<!--[if lt IE 8]>
-        <div class="chromeframe alert alert-danger" style="text-align:center">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
-        <![endif]-->
-		<header id="sp-header-wrapper" class=" ">
-			<div class="container">
-				<div class="row-fluid" id="header">
-					<div id="sp-logo" class="span6">
-						<div class="logo-wrapper"><a href="https://petrodrill-global.com/v2">
-								<div style="width:350px; height:120px;" class="logo"></div>
-							</a></div>
-					</div>
 
-					<div id="sp-top-info" class="span3 offset3">
-						<ul class="social-icons">
-							<li><a target="_blank" href="https://www.facebook.com/petrodrillglobal"><i
-										class="icon-facebook"></i></a></li>
-							<li><a target="_blank" href="https://twitter.com/petrodrillglobal"><i
-										class="icon-twitter"></i></a></li>
-							<li><a target="_blank" href="https://plus.google.com/u/0/104959331757126810588/posts"><i
-										class="icon-google-plus"></i></a></li>
-							<li><a target="_blank" href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a target="_blank" href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a target="_blank" href="#"><i class="icon-youtube"></i></a></li>
-						</ul>
-					</div>
+		<section id="sp-menu-wrapper">
+			<div class="container">
+				<div id="sp-logo">
+					<a href="" class="logo-wrapper">
+						<div class="logo"></div>
+					</a>
+					<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+						aria-controls="sp-main-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
-			</div>
-		</header>
-		<section id="sp-menu-wrapper" class=" ">
-			<div class="container">
-				<div class="row-fluid" id="menu">
-					<div id="sp-menu" class="span9">
-
-
-						<div id="sp-main-menu" class="visible-desktop">
-							<ul class="sp-menu level-0">
-								<li class="menu-item first"><a href="../" class="menu-item first"><span
-											class="menu"><span class="menu-title">Home</span></span></a></li>
-								<li class="menu-item"><a href="about.html" class="menu-item"><span class="menu"><span
-												class="menu-title">About</span></span></a></li>
-								<li class="menu-item"><a href="exploration.html" class="menu-item"><span
-											class="menu"><span class="menu-title">Exploration</span></span></a></li>
-								<li class="menu-item"><a href="service.html" class="menu-item"><span class="menu"><span
-												class="menu-title">Services</span></span></a></li>
-								<li class="menu-item"><a href="product.html" class="menu-item"><span class="menu"><span
-												class="menu-title">Products</span></span></a></li>
-								<li class="menu-item active"><a href="careers.html" class="menu-item active"><span
-											class="menu"><span class="menu-title">Careers</span></span></a></li>
-								<li class="menu-item last"><a href="contact.html" class="menu-item last"><span
-											class="menu"><span class="menu-title">Contact Us</span></span></a></li>
-							</ul>
+				<nav id="sp-main-menu">
+					<ul class="sp-menu" id="mainMenuList">
+						<li class="menu-item"><a href="./" title="Home">Home</a></li>
+						<li class="menu-item"><a href="about.html" title="About">About</a></li>
+						<li class="menu-item"><a href="exploration.html" title="Exploration">Exploration</a>
+						</li>
+						<li class="menu-item"><a href="service.html" title="Services">Services</a></li>
+						<li class="menu-item"><a href="product.html" title="Products">Products</a></li>
+						<li class="menu-item active"><a href="careers.html" title="Careers">Careers</a></li>
+						<li class="menu-item"><a href="contact.html" title="Contact">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div id="sp-search">
+					<form action="./" method="post" class="search-form">
+						<div class="search-wrapper">
+							<input type="text" name="searchword" id="mod-search-searchword" placeholder="Search..."
+								class="search-input" />
+							<button type="submit" class="search-btn" title="Search">
+								<i class="icon-search"></i>
+							</button>
 						</div>
-					</div>
-
-					<div id="sp-search" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper clearfix">
-								<div class="mod-content clearfix">
-									<div class="mod-inner clearfix">
-
-										<div class="search">
-											<form action="https://petrodrill-global.com/v2/index.php/careers"
-												method="post">
-												<input name="searchword" class="input-block-level"
-													id="mod-search-searchword" type="text" placeholder="Search..." />
-												<input type="hidden" name="task" value="search" />
-												<input type="hidden" name="option" value="com_search" />
-												<input type="hidden" name="Itemid" value="0" />
-												<button class="btn-top-search" onclick="this.form.searchword.focus();">
-													<i class="icon-search"></i>
-												</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
+						<input type="hidden" name="task" value="search" />
+						<input type="hidden" name="option" value="com_search" />
+						<input type="hidden" name="Itemid" value="0" />
+					</form>
 				</div>
 			</div>
 		</section>
@@ -360,27 +134,6 @@
 											Careers </h2>
 									</div>
 
-									<div class="icons">
-
-										<div class="btn-group pull-right">
-											<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <span
-													class="icon-cog"></span> <span class="caret"></span> </a>
-											<ul class="dropdown-menu">
-												<li class="print-icon"> <a
-														href="careersabf8.html?tmpl=component&amp;print=1&amp;page="
-														title="Print"
-														onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"
-														rel="nofollow"><span
-															class="icon-print"></span>&#160;Print&#160;</a> </li>
-												<li class="email-icon"> <a
-														href="component/mailto/indexaf8b.html?tmpl=component&amp;template=shaper_corporex&amp;link=c2b2ae357ff88221b21ea49998cd090c168c6efc"
-														title="Email"
-														onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><span
-															class="icon-envelope"></span> Email</a> </li>
-											</ul>
-										</div>
-
-									</div>
 
 
 
@@ -394,7 +147,7 @@
 
 											<form enctype="multipart/form-data" id="fox_form_m265" name="fox_form_m265"
 												class="fox_form foxform-stacked" method="post"
-												action="https://petrodrill-global.com/v2/index.php/careers#mid_265">
+												action="careers.html#mid_265">
 												<!-- mod_foxcontact 3.3.1 GNU/GPL v3 -->
 												<div id="mid_265-customhtml0" class="control-group">
 													<div class="controls">
@@ -589,126 +342,76 @@
 						<div class="gap"></div>
 					</div>
 
-					<div id="sp-go-to-top" class="span2"><a class="sp-totop" href="javascript:;" title="Goto Top"
-							rel="nofollow"><small>Goto Top </small><i class="icon-angle-up"></i></a></div>
-				</div>
-			</div>
-		</section>
-		<section id="sp-bottom-wrapper" class=" ">
-			<div class="container">
-				<div class="row-fluid" id="bottom">
-					<div id="sp-bottom1" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Media </h2>
-
-
-								<div class="custom">
-									<ul>
-										<li><a href="#">Latest News</a></li>
-										<li><a href="#">Image Gallery</a></li>
-										<li><a href="#">Video Gallery</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-
-					<div id="sp-bottom2" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Support </h2>
-
-
-								<div class="custom">
-									<ul>
-										<li><a href="#">Demos</a></li>
-										<li><a href="#">Careers</a></li>
-										<li><a href="#">Contacts</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-
-					<div id="sp-bottom3" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Resources </h2>
-
-
-								<div class="custom">
-									<ul>
-										<li><a href="#">Catalogs</a></li>
-										<li><a href="#">Brochure</a></li>
-										<li><a href="component/users/index015e.html?view=login">Login</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-
-					<div id="sp-bottom4" class="span3">
-						<div class="module  newsletter">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Newsletter </h2>
-								<span class="sp-badge  newsletter"></span>
-								<div class="acymailing_module newsletter" id="acymailing_module_formAcymailing49641">
-									<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing49641">
-										<form id="formAcymailing49641"
-											action="https://petrodrill-global.com/v2/index.php/careers"
-											onsubmit="return submitacymailingform('optin','formAcymailing49641')"
-											method="post" name="formAcymailing49641">
-											<div class="acymailing_module_form">
-												<div class="acymailing_form">
-													<p class="onefield fieldacyemail"
-														id="field_email_formAcymailing49641"> <span
-															class="acyfield_email"><input
-																id="user_email_formAcymailing49641" placeholder="E-mail"
-																class="inputbox" type="text" name="user[email]"
-																style="width:95%" value="" /></span>
-													</p>
-
-													<p class="acysubbuttons">
-														<input class="button subbutton btn btn-primary" type="submit"
-															value="Subscribe" name="Submit"
-															onclick="try{ return submitacymailingform('optin','formAcymailing49641'); }catch(err){alert('The form could not be submitted '+err);return false;}" />
-													</p>
-												</div>
-												<input type="hidden" name="ajax" value="0" />
-												<input type="hidden" name="ctrl" value="sub" />
-												<input type="hidden" name="task" value="notask" />
-												<input type="hidden" name="redirect"
-													value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fcareers" />
-												<input type="hidden" name="redirectunsub"
-													value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fcareers" />
-												<input type="hidden" name="option" value="com_acymailing" />
-												<input type="hidden" name="hiddenlists" value="1" />
-												<input type="hidden" name="acyformname" value="formAcymailing49641" />
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
+					<div id="sp-go-to-top">
+						<a class="sp-totop" href="javascript:;" title="Back to Top" rel="nofollow">
+							<i class="icon-angle-up"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer id="sp-footer-wrapper" class=" ">
+		<section id="sp-bottom-wrapper">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="footer-column">
+						<h3>Media</h3>
+						<ul>
+							<li><a href="#">Latest News</a></li>
+							<li><a href="#">Image Gallery</a></li>
+							<li><a href="#">Video Gallery</a></li>
+						</ul>
+						</nav>
+
+						<div class="footer-column">
+							<h3>Support</h3>
+							<ul>
+								<li><a href="#">Demos</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-column">
+							<h3>Resources</h3>
+							<ul>
+								<li><a href="#">Catalogs</a></li>
+								<li><a href="#">Brochure</a></li>
+								<li><a href="component/users/index015e.html?view=login">Login</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-column newsletter-column">
+							<h3>Newsletter</h3>
+							<p>Subscribe to stay updated with the latest news.</p>
+							<form id="formAcymailing90781" action="about.html"
+								onsubmit="return submitacymailingform('optin','formAcymailing90781')" method="post"
+								name="formAcymailing90781">
+								<div class="newsletter-form">
+									<input type="email" name="user[email]" placeholder="Enter your email"
+										class="newsletter-input" required />
+									<button type="submit" class="newsletter-btn">Subscribe</button>
+								</div>
+								<input type="hidden" name="ajax" value="0" />
+								<input type="hidden" name="ctrl" value="sub" />
+								<input type="hidden" name="task" value="notask" />
+								<input type="hidden" name="redirect"
+									value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
+								<input type="hidden" name="redirectunsub"
+									value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
+								<input type="hidden" name="option" value="com_acymailing" />
+								<input type="hidden" name="hiddenlists" value="1" />
+								<input type="hidden" name="acyformname" value="formAcymailing90781" />
+							</form>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<footer id="sp-footer-wrapper">
 			<div class="container">
-				<div class="row-fluid" id="footer">
-					<div id="sp-footer1" class="span12"><span class="copyright">Copyright © 2026 - PetroDrill Global
-							Limited.</span><span class="designed-by">Designed by Dawn Global </span> <a
-							href="http://www.joomshaper.com/" title="joomshaper.com"></a></div>
+				<div id="footer">
+					<div id="sp-footer1" class="footer-bottom"><span class="copyright">Copyright © 2026 - PetroDrill
+							Global Limited.</span><span class="designed-by">Designed by Dawn Global </span></div>
 				</div>
 			</div>
 		</footer>

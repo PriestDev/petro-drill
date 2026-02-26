@@ -22,50 +22,7 @@
 	<link rel="stylesheet" href="../templates/shaper_corporex/css/template.css" type="text/css" />
 	<link rel="stylesheet" href="../templates/shaper_corporex/css/presets/preset3.css" type="text/css" />
 	<link rel="stylesheet" href="../media/com_acymailing/css/module_defaultb54b.css?v=1771269546" type="text/css" />
-	<style type="text/css">
-		.container {
-			max-width: 1170px
-		}
-
-		body,
-		p {
-			font-family: 'Raleway';
-		}
-
-		h1,
-		h2,
-		h3,
-		h4 {
-			font-family: 'Raleway';
-		}
-
-		#sp-menu-wrapper {
-			margin: 0 0 50px 0 !important;
-		}
-
-		#sp-main-body-wrapper {
-			background: rgba(246, 180, 74, 0) !important;
-		}
-
-		/* Footer styling - remove white backgrounds and keep text visible */
-		#sp-bottom-wrapper, #sp-footer-wrapper { background: linear-gradient(135deg, #1f2937 0%, #263549 100%); color: #ffffff; width:100% !important; margin:0 !important; padding: 60px 0 !important; }
-		#sp-bottom-wrapper .container, #sp-footer-wrapper .container { max-width:1400px !important; margin:0 auto !important; }
-		#sp-bottom-wrapper #bottom, #sp-bottom-wrapper #bottom .row-fluid { background: transparent !important; }
-		#sp-bottom-wrapper #bottom > * { background: transparent !important; }
-		#sp-bottom-wrapper .span3 { background: transparent !important; box-shadow: none !important; }
-		#sp-bottom-wrapper .mod-wrapper-flat, #sp-bottom-wrapper .module, #sp-bottom-wrapper .custom { background: transparent !important; box-shadow: none !important; border: 0 !important; }
-		#sp-bottom-wrapper .module-title { color: #ffffff !important; text-transform: uppercase; font-weight:700; letter-spacing:1px; }
-		#sp-bottom-wrapper ul { list-style:none; padding:0; margin:0; }
-		#sp-bottom-wrapper ul li { margin-bottom:12px; }
-		#sp-bottom-wrapper ul li a { color: rgba(255,255,255,0.92); text-decoration:none; }
-		#sp-bottom-wrapper .inputbox { background: rgba(255,255,255,0.1) !important; color:#fff !important; border:1px solid rgba(255,255,255,0.2) !important; }
-		#sp-bottom-wrapper .button { background: #3b82f6 !important; border:none; color:#fff !important; }
-
-		/* Logo styling - display logo in navbar */
-		#sp-logo { display:flex; align-items:center; }
-		#sp-logo .logo-wrapper { display:flex; align-items:center; }
-		#sp-logo .logo { background-image:url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
-	</style>
+	
 	<script src="../media/system/js/mootools-core.js" type="text/javascript"></script>
 	<script src="../media/jui/js/jquery.min.js" type="text/javascript"></script>
 	<script src="../media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
@@ -81,154 +38,67 @@
 	<script src="../templates/shaper_corporex/js/jquery.inview.min.js" type="text/javascript"></script>
 	<script src="../templates/shaper_corporex/js/main.js" type="text/javascript"></script>
 	<script src="../media/com_acymailing/js/acymailing_module83f3.js?v=462" type="text/javascript"></script>
-	<script type="text/javascript">
-		jQuery(window).on('load', function () {
-			new JCaption('img.caption');
-		});
-		spnoConflict(function ($) {
+	
+	<style>
+		/* Logo styling - display logo in navbar */
+		#sp-logo { display:flex; align-items:center; }
+		#sp-logo .logo-wrapper { display:flex; align-items:center; }
+		#sp-logo .logo { background-image:url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
+		/* hide search bar */
+		#sp-search { display: none !important; }
+	</style>
 
-			function mainmenu() {
-				$('.sp-menu').spmenu({
-					startLevel: 0,
-					direction: 'ltr',
-					initOffset: {
-						x: 0,
-						y: 15
-					},
-					subOffset: {
-						x: 0,
-						y: 0
-					},
-					center: 0
-				});
-			}
-
-			mainmenu();
-
-			$(window).on('resize', function () {
-				mainmenu();
-			});
-
-
-		});
-		var acymailing = Array();
-		acymailing['NAMECAPTION'] = 'Name';
-		acymailing['NAME_MISSING'] = 'Please enter your name';
-		acymailing['EMAILCAPTION'] = 'E-mail';
-		acymailing['VALID_EMAIL'] = 'Please enter a valid e-mail address';
-		acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
-		acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
-		acymailing['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';
-
-	</script>
-
-
-
-
-
-
-
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-57149898-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
-	<!-- Universal Google Analytics Plugin by PB Web Development -->
-
-
+	<!-- Inline override to ensure product-thumb styles load last and take effect immediately -->
+	<style>
+	img.product-thumb{display:block!important;max-width:220px!important;width:100%!important;height:160px!important;object-fit:contain!important;background:linear-gradient(180deg,#fbfdff 0%,#eef6ff 100%)!important;padding:10px!important;border-radius:12px!important;box-shadow:0 8px 24px rgba(30,58,138,0.10)!important;transition:transform .28s ease,box-shadow .28s ease!important;margin:0 auto!important}
+	img.product-thumb:hover{transform:translateY(-6px) scale(1.04)!important;box-shadow:0 20px 44px rgba(30,58,138,0.16)!important}
+	@media(max-width:768px){img.product-thumb{max-width:160px!important;height:140px!important;padding:8px!important}}
+	</style>
 </head>
 
 <body class="article subpage  ltr preset3 menu-product responsive bg hfeed clearfix">
 	<div class="body-innerwrapper">
-		<!--[if lt IE 8]>
-        <div class="chromeframe alert alert-danger" style="text-align:center">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
-        <![endif]-->
-		<header id="sp-header-wrapper" class=" ">
-			<div class="container">
-				<div class="row-fluid" id="header">
-					<div id="sp-logo" class="span6">
-						<div class="logo-wrapper"><a href="https://petrodrill-global.com/v2">
-								<div style="width:350px; height:120px;" class="logo"></div>
-							</a></div>
-					</div>
+		
+		
+		<section id="sp-menu-wrapper">
+            <div class="container">
+                <div id="sp-logo">
+                    <a href="" class="logo-wrapper">
+                        <div class="logo"></div>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="sp-main-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <nav id="sp-main-menu">
+                    <ul class="sp-menu" id="mainMenuList">
+                        <li class="menu-item"><a href="./" title="Home">Home</a></li>
+                        <li class="menu-item"><a href="about.html" title="About">About</a></li>
+                        <li class="menu-item"><a href="exploration.html" title="Exploration">Exploration</a></li>
+                        <li class="menu-item"><a href="service.html" title="Services">Services</a></li>
+                        <li class="menu-item active"><a href="product.html" title="Products">Products</a></li>
+                        <li class="menu-item"><a href="careers.html" title="Careers">Careers</a></li>
+                        <li class="menu-item"><a href="contact.html" title="Contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div id="sp-search">
+                    <form action="./" method="post" class="search-form">
+                        <div class="search-wrapper">
+                            <input type="text" name="searchword" id="mod-search-searchword" placeholder="Search..." class="search-input" />
+                            <button type="submit" class="search-btn" title="Search">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
+                        <input type="hidden" name="task" value="search" />
+                        <input type="hidden" name="option" value="com_search" />
+                        <input type="hidden" name="Itemid" value="0" />
+                    </form>
+                </div>
+            </div> 
+        </section>
 
-					<div id="sp-top-info" class="span3 offset3">
-						<ul class="social-icons">
-							<li><a target="_blank" href="https://www.facebook.com/petrodrillglobal"><i
-										class="icon-facebook"></i></a></li>
-							<li><a target="_blank" href="https://twitter.com/petrodrillglobal"><i
-										class="icon-twitter"></i></a></li>
-							<li><a target="_blank" href="https://plus.google.com/u/0/104959331757126810588/posts"><i
-										class="icon-google-plus"></i></a></li>
-							<li><a target="_blank" href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a target="_blank" href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a target="_blank" href="#"><i class="icon-youtube"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<section id="sp-menu-wrapper" class=" ">
-			<div class="container">
-				<div class="row-fluid" id="menu">
-					<div id="sp-menu" class="span9">
-
-
-						<div id="sp-main-menu" class="visible-desktop">
-							<ul class="sp-menu level-0">
-								<li class="menu-item first"><a href="../" class="menu-item first"><span
-											class="menu"><span class="menu-title">Home</span></span></a></li>
-								<li class="menu-item"><a href="about.html" class="menu-item"><span class="menu"><span
-												class="menu-title">About</span></span></a></li>
-								<li class="menu-item"><a href="exploration.html" class="menu-item"><span
-											class="menu"><span class="menu-title">Exploration</span></span></a></li>
-								<li class="menu-item"><a href="service.html" class="menu-item"><span class="menu"><span
-												class="menu-title">Services</span></span></a></li>
-								<li class="menu-item active"><a href="product.html" class="menu-item active"><span
-											class="menu"><span class="menu-title">Products</span></span></a></li>
-								<li class="menu-item"><a href="careers.html" class="menu-item"><span class="menu"><span
-												class="menu-title">Careers</span></span></a></li>
-								<li class="menu-item last"><a href="contact.html" class="menu-item last"><span
-											class="menu"><span class="menu-title">Contact Us</span></span></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div id="sp-search" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper clearfix">
-								<div class="mod-content clearfix">
-									<div class="mod-inner clearfix">
-
-										<div class="search">
-											<form action="https://petrodrill-global.com/v2/index.php/product"
-												method="post">
-												<input name="searchword" class="input-block-level"
-													id="mod-search-searchword" type="text" placeholder="Search..." />
-												<input type="hidden" name="task" value="search" />
-												<input type="hidden" name="option" value="com_search" />
-												<input type="hidden" name="Itemid" value="0" />
-												<button class="btn-top-search" onclick="this.form.searchword.focus();">
-													<i class="icon-search"></i>
-												</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section id="sp-main-body-wrapper" class=" ">
 			<div class="container">
 				<div class="row-fluid" id="main-body">
@@ -284,25 +154,25 @@
 													<tr>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/152-58-120x120.html"
+																		src="../images/project/project1.jpeg"
 																		alt="Baths" /></strong></p>
 															<p><strong>Baths</strong></p>
 														</td>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/100-70-drop%20shadow-120x120.html"
+																		src="../images/project/project2.jpeg"
 																		alt="Cement Density" /></strong></p>
 															<p><strong>Cement Density</strong></p>
 														</td>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/120-285-120x120.html"
+																		src="../images/project/project3.jpeg"
 																		alt="Compressive Strength" /></strong></p>
 															<p><strong>Compressive Strength</strong></p>
 														</td>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/model-60-atmospheric-cement-consistometer-120x120.html"
+																		src="../images/project/project4.jpeg"
 																		alt="Consistometers" /></strong></p>
 															<p><strong>Consistometers</strong></p>
 														</td>
@@ -310,27 +180,27 @@
 													<tr>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/171-00-C%20-%20Full%20Unit-120x120.html"
+																		src="../images/project/project5.jpeg"
 																		alt="Filtration" /></strong></p>
 															<p><strong>Filtration</strong></p>
 														</td>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/120-70-120x120.html"
+																		src="../images/project/project6.jpeg"
 																		alt="Fluid Loss" /></strong></p>
 															<p><strong>Fluid Loss</strong></p>
 														</td>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/120-53-120x120.html"
+																		src="../images/project/project7.jpeg"
 																		alt="Gas Migration" /></strong></p>
 															<p><strong>Gas Migration</strong></p>
 														</td>
 														<td style="text-align: center;" width="25%">
 															<p><strong> <img
-																		src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/120-85-120x120.html"
+																		src="../images/project/project8.jpeg"
 																		alt="Permeability" /></strong></p>
-															<p><strong>Premeability</strong></p>
+															<p><strong>Permeability</strong></p>
 														</td>
 													</tr>
 												</tbody>
@@ -343,24 +213,24 @@
 														<tr>
 															<td style="text-align: center;" width="25%">
 																<p><strong> <img
-																			src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/166-16-120x120.html"
+																			src="../images/project/project9.jpeg"
 																			alt="Balances" /></strong></p>
 																<p><strong>Balances</strong></p>
 															</td>
 															<td style="text-align: center;" width="25%">
 																<p><strong> <img
-																			src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/153-220-120x120.html"
+																			src="../images/project/project10.jpeg"
 																			alt="Centrifuges" /></strong></p>
 																<p><strong>Centrifuges</strong></p>
 															</td>
 															<td style="text-align: center;" width="25%">
 																<p><strong> <img
-																			src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/glassware-120x120.html"
+																			src="../images/project/project11.jpeg"
 																			alt="Glassware" /></strong></p>
 																<p><strong>Glassware</strong></p>
 															</td>
 															<td style="text-align: center;" width="25%">
-																<p> <img src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/152-45-120x120.html"
+																<p> <img src="../images/project/project12.jpeg"
 																		alt="Hot Plates and Stirrers" /></p>
 																<p><strong>Hot Plates and Stirrers</strong></p>
 															</td>
@@ -368,19 +238,19 @@
 														<tr>
 															<td style="text-align: center;" width="25%">
 																<p><strong> <img
-																			src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/130-87-120x120.html"
+																			src="../images/project/project13.jpeg"
 																			alt="Meters" /></strong></p>
 																<p><strong>Meters</strong></p>
 															</td>
 															<td style="text-align: center;" width="25%">
 																<p><strong> <img
-																			src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/152-00-120x120.html"
+																			src="../images/project/project14.jpeg"
 																			alt="Mixers and Blenders" /></strong></p>
 																<p><strong>Mixers and Blenders</strong></p>
 															</td>
 															<td style="text-align: center;" width="25%">
 																<p><strong> <img
-																			src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/pH_Analysis-120x120.html"
+																			src="../images/project/project15.jpeg"
 																			alt="pH Analysis" /></strong></p>
 																<p><strong>PH Analysis</strong></p>
 															</td>
@@ -402,53 +272,37 @@
 														<tbody>
 															<tr>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/model-900-viscometer-120x120.html"
-																				alt="Viscosity" /></strong></p>
-																	<p><strong>Viscoity</strong></p>
-																</td>
+																	<p><img class="product-thumb" src="../images/project/project16.jpeg" alt="Viscosity" /></p>
+																			<p><strong>Viscoity</strong></p>
+																		</td>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/140-30-Drop%20Shadow-120x120.html"
-																				alt="Filtration" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project17.jpeg" alt="Filtration" /></p>
 																	<p><strong>Filtration</strong></p>
 																</td>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/175-25%20-%20Big%20Cell%20-%20With%20Valve%20Stem-120x120.html"
-																				alt="Aging" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project18.jpeg" alt="Aging" /></p>
 																	<p><strong>Aging</strong></p>
 																</td>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/115-00%20-%20OFITE%20Metal%20Mud%20Balance%20-%20Black-120x120.html"
-																				alt="Density" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project19.jpeg" alt="Density" /></p>
 																	<p><strong>Density</strong></p>
 																</td>
 															</tr>
 															<tr>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/165-00%20-%20Drop%20Shadow%20(New)-120x120.html"
-																				alt="Retorts" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project20.jpeg" alt="Retorts" /></p>
 																	<p><strong>Retorts</strong></p>
 																</td>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/112-00-120x120.html"
-																				alt="Lubricity" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project21.jpeg" alt="Lubricity" /></p>
 																	<p><strong>Lubricity</strong></p>
 																</td>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/150-80-120x120.html"
-																				alt="Swelling" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project22.jpeg" alt="Swelling" /></p>
 																	<p><strong>Swelling</strong></p>
 																</td>
 																<td style="text-align: center;" width="25%">
-																	<p><strong> <img
-																				src="../../../www.ofite.com/components/com_mijoshop/opencart/image/cache/data/130-87-120x120.html"
-																				alt="Resistivity" /></strong></p>
+																	<p><img class="product-thumb" src="../images/project/project23.jpeg" alt="Resistivity" /></p>
 																	<p><strong>Resistivity</strong></p>
 																</td>
 															</tr>
@@ -491,126 +345,73 @@
 						<div class="gap"></div>
 					</div>
 
-					<div id="sp-go-to-top" class="span2"><a class="sp-totop" href="javascript:;" title="Goto Top"
-							rel="nofollow"><small>Goto Top </small><i class="icon-angle-up"></i></a></div>
-				</div>
-			</div>
-		</section>
-		<section id="sp-bottom-wrapper" class=" ">
-			<div class="container">
-				<div class="row-fluid" id="bottom">
-					<div id="sp-bottom1" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Media </h2>
-
-
-								<div class="custom">
-									<ul>
-										<li><a href="#">Latest News</a></li>
-										<li><a href="#">Image Gallery</a></li>
-										<li><a href="#">Video Gallery</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-
-					<div id="sp-bottom2" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Support </h2>
-
-
-								<div class="custom">
-									<ul>
-										<li><a href="#">Demos</a></li>
-										<li><a href="#">Careers</a></li>
-										<li><a href="#">Contacts</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-
-					<div id="sp-bottom3" class="span3">
-						<div class="module ">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Resources </h2>
-
-
-								<div class="custom">
-									<ul>
-										<li><a href="#">Catalogs</a></li>
-										<li><a href="#">Brochure</a></li>
-										<li><a href="component/users/index015e.html?view=login">Login</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
-					</div>
-
-					<div id="sp-bottom4" class="span3">
-						<div class="module  newsletter">
-							<div class="mod-wrapper-flat clearfix">
-								<h2 class="module-title">
-									Newsletter </h2>
-								<span class="sp-badge  newsletter"></span>
-								<div class="acymailing_module newsletter" id="acymailing_module_formAcymailing55971">
-									<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing55971">
-										<form id="formAcymailing55971"
-											action="https://petrodrill-global.com/v2/index.php/product"
-											onsubmit="return submitacymailingform('optin','formAcymailing55971')"
-											method="post" name="formAcymailing55971">
-											<div class="acymailing_module_form">
-												<div class="acymailing_form">
-													<p class="onefield fieldacyemail"
-														id="field_email_formAcymailing55971"> <span
-															class="acyfield_email"><input
-																id="user_email_formAcymailing55971" placeholder="E-mail"
-																class="inputbox" type="text" name="user[email]"
-																style="width:95%" value="" /></span>
-													</p>
-
-													<p class="acysubbuttons">
-														<input class="button subbutton btn btn-primary" type="submit"
-															value="Subscribe" name="Submit"
-															onclick="try{ return submitacymailingform('optin','formAcymailing55971'); }catch(err){alert('The form could not be submitted '+err);return false;}" />
-													</p>
-												</div>
-												<input type="hidden" name="ajax" value="0" />
-												<input type="hidden" name="ctrl" value="sub" />
-												<input type="hidden" name="task" value="notask" />
-												<input type="hidden" name="redirect"
-													value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fproduct" />
-												<input type="hidden" name="redirectunsub"
-													value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fproduct" />
-												<input type="hidden" name="option" value="com_acymailing" />
-												<input type="hidden" name="hiddenlists" value="1" />
-												<input type="hidden" name="acyformname" value="formAcymailing55971" />
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="gap"></div>
+					<div id="sp-go-to-top">
+						<a class="sp-totop" href="javascript:;" title="Back to Top" rel="nofollow">
+							<i class="icon-angle-up"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer id="sp-footer-wrapper" class=" ">
+		<section id="sp-bottom-wrapper">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="footer-column">
+						<h3>Media</h3>
+						<ul>
+							<li><a href="#">Latest News</a></li>
+							<li><a href="#">Image Gallery</a></li>
+							<li><a href="#">Video Gallery</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column">
+						<h3>Support</h3>
+						<ul>
+							<li><a href="#">Demos</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column">
+						<h3>Resources</h3>
+						<ul>
+							<li><a href="#">Catalogs</a></li>
+							<li><a href="#">Brochure</a></li>
+							<li><a href="component/users/index015e.html?view=login">Login</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-column newsletter-column">
+						<h3>Newsletter</h3>
+						<p>Subscribe to stay updated with the latest news.</p>
+						<form id="formAcymailing90781"
+							action="about.html"
+							onsubmit="return submitacymailingform('optin','formAcymailing90781')"
+							method="post" name="formAcymailing90781">
+							<div class="newsletter-form">
+								<input type="email" name="user[email]" placeholder="Enter your email" class="newsletter-input" required />
+								<button type="submit" class="newsletter-btn">Subscribe</button>
+							</div>
+							<input type="hidden" name="ajax" value="0" />
+							<input type="hidden" name="ctrl" value="sub" />
+							<input type="hidden" name="task" value="notask" />
+							<input type="hidden" name="redirect" value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
+							<input type="hidden" name="redirectunsub" value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
+							<input type="hidden" name="option" value="com_acymailing" />
+							<input type="hidden" name="hiddenlists" value="1" />
+							<input type="hidden" name="acyformname" value="formAcymailing90781" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="sp-footer-wrapper">
 			<div class="container">
-				<div class="row-fluid" id="footer">
-					<div id="sp-footer1" class="span12"><span class="copyright">Copyright © 2026 - PetroDrill Global
-							Limited.</span><span class="designed-by">Designed by Dawn Global </span> <a
-							href="http://www.joomshaper.com/" title="joomshaper.com"></a></div>
+				<div id="footer">
+					<div id="sp-footer1" class="footer-bottom"><span class="copyright">Copyright © 2026 - PetroDrill Global Limited.</span><span class="designed-by">Designed by Dawn Global </span></div>
 				</div>
 			</div>
 		</footer>

@@ -2396,12 +2396,167 @@ ul.pagenav .pagenav-next {
 
 /* csutom styles for service page start*/
 
-.service-division{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
-    justify-content: space-between;
+.service-division {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-division .image {
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.service-division .image1 {
+  background-image: url(../../../images//hse.jpg);
+}
+.service-division .image2 {
+  background-image: url(../../../images/safety.jpg);
+}
+.service-division .image3 {
+  background-image: url(../../../images/imgb5.jpg);
+}
+
+
+.safety-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.safety-services .image {
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.safety-services .image1 {
+  background-image: url(../../../images/hse_innov_220.jpg);
+}
+.safety-services .image2 {
+  background-image: url(../../../images/tp2.jpg);
+}
+.safety-services .image3 {
+  background-image: url(../../../images/safetyequipment2.jpg);
+}
+
+.equipment-supplies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.equipment-supplies .image {
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.equipment-supplies .image1 {
+  background-image: url(../../../images/eqipment.jpg);
+}
+.equipment-supplies .image2 {
+  background-image: url(../../../images/Generator1.jpg);
+}
+.equipment-supplies .image3 {
+  background-image: url(../../../images/natural-gas-well-pump-art-bc05753fe3be4122.jpg);
+}
+.equipment-supplies .image4 {
+  background-image: url(../../../images/CobeyHighSpeedReciprocatingCompressorPackageModel-2.jpg);
+}
+
+
+.service-partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-partners .image {
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.service-partners .image1 {
+  background-image: url(../../../images/barge_rig.jpg);
+}
+.service-partners .image2 {
+  background-image: url(../../../images/bargerig.jpg);
+}
+.service-partners .image3 {
+  background-image: url(../../../images/images1.jpg);
+}
+.service-partners .image4 {
+  background-image: url(../../../images/landrig.jpg);
+}
+
+.services-process-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-process-grid .service-step{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-process-grid .service-step .text{
+  width: 50%;
+}
+
+.services-process-grid .service-step .text h4{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.services-process-grid .service-step .text p{
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.2;
+}
+
+.services-process-grid .service-step .image{
+  width: 50%;
+  display: flex;
+  border: 2px solid #eee;
+}
+
+.services-process-grid .service-step .image >img{
+  width: 100%;
+}
+
+.services-process-grid .service-step .image >img{
+  width: 50%;
 }
 
 /* service style end */

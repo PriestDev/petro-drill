@@ -2394,6 +2394,18 @@ ul.pagenav .pagenav-next {
   font-size: 24px;
 }
 
+/* csutom styles for service page start*/
+
+.service-division{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+/* service style end */
+
 /* ====================================================================
    8. MODERN COMPONENTS - SLIDER, FEATURES, TAB, CTA, TESTIMONIALS
    ==================================================================== */
@@ -2448,43 +2460,43 @@ ul.pagenav .pagenav-next {
 
 .slider-slide.slide-1 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
-    url("https://images.unsplash.com/photo-1494783367193-149034c05e41?w=1200&h=600&fit=crop");
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
+    url("https://www.michels.us/wp-content/uploads/2022/09/Direct-Pipe-solution-2400x1350-1.webp");
 }
 
 .slider-slide.slide-2 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
     url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=600&fit=crop");
 }
 
 .slider-slide.slide-3 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
-    url("https://images.unsplash.com/photo-1516387938669-c8fac68d4038?w=1200&h=600&fit=crop");
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
+    url("https://www.johnhenryrockdrill.com/wp-content/uploads/2023/04/JH16-316-btn-1.jpg");
 }
 
 .slider-slide.slide-4 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
     url("https://images.unsplash.com/photo-1560707303-4e980ce876ad?w=1200&h=600&fit=crop");
 }
 
 .slider-slide.slide-5 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
-    url("https://images.unsplash.com/photo-1577962997957-51f3cf8d1d5d?w=1200&h=600&fit=crop");
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
+    url("https://www.linedpipesystems.com/wp-content/uploads/2025/09/heavy-duty-construction-machines-carrying-placing-gas-pipe-into-ground-1200x801.jpg");
 }
 
 .slider-slide.slide-6 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
     url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop");
 }
 
 .slider-slide.slide-7 {
   background-image:
-    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(45, 90, 168, 0.7)),
+    linear-gradient(135deg, rgba(4, 36, 122, 0.7), rgba(45, 90, 168, 0.7)),
     url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=600&fit=crop");
 }
 

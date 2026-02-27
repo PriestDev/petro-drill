@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="../templates/shaper_corporex/css/template.css" type="text/css" />
 	<link rel="stylesheet" href="../templates/shaper_corporex/css/presets/preset3.css" type="text/css" />
 	<link rel="stylesheet" href="../media/com_acymailing/css/module_defaultb54b.css?v=1771269546" type="text/css" />
-	
+
 	<script src="../media/system/js/mootools-core.js" type="text/javascript"></script>
 	<script src="../media/jui/js/jquery.min.js" type="text/javascript"></script>
 	<script src="../media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
@@ -41,56 +41,78 @@
 	<script src="../media/com_acymailing/js/acymailing_module83f3.js?v=462" type="text/javascript"></script>
 	<style>
 		/* Logo styling - display logo in navbar */
-		#sp-logo { display:flex; align-items:center; }
-		#sp-logo .logo-wrapper { display:flex; align-items:center; }
-		#sp-logo .logo { background-image:url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important; background-size:contain; background-repeat:no-repeat; background-position:left center; display:block; width:280px !important; height:80px !important; margin-right:20px; }
+		#sp-logo {
+			display: flex;
+			align-items: center;
+		}
+
+		#sp-logo .logo-wrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		#sp-logo .logo {
+			background-image: url('../templates/shaper_corporex/images/presets/preset3/logo.png') !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: left center;
+			display: block;
+			width: 280px !important;
+			height: 80px !important;
+			margin-right: 20px;
+		}
+
 		/* hide search bar */
-		#sp-search { display: none !important; }
+		#sp-search {
+			display: none !important;
+		}
 	</style>
 </head>
 
 <body class="article subpage  ltr preset3 menu-service responsive bg hfeed clearfix">
 	<div class="body-innerwrapper">
-		
-		
+
+
 		<section id="sp-menu-wrapper">
-            <div class="container">
-                <div id="sp-logo">
-                    <a href="" class="logo-wrapper">
-                        <div class="logo"></div>
-                    </a>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="sp-main-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-                <nav id="sp-main-menu">
-                    <ul class="sp-menu" id="mainMenuList">
-                        <li class="menu-item"><a href="./" title="Home">Home</a></li>
-                        <li class="menu-item"><a href="about.html" title="About">About</a></li>
-                        <li class="menu-item"><a href="exploration.html" title="Exploration">Exploration</a></li>
-                        <li class="menu-item active"><a href="service.html" title="Services">Services</a></li>
-                        <li class="menu-item"><a href="product.html" title="Products">Products</a></li>
-                        <li class="menu-item"><a href="careers.html" title="Careers">Careers</a></li>
-                        <li class="menu-item"><a href="contact.html" title="Contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <div id="sp-search">
-                    <form action="./" method="post" class="search-form">
-                        <div class="search-wrapper">
-                            <input type="text" name="searchword" id="mod-search-searchword" placeholder="Search..." class="search-input" />
-                            <button type="submit" class="search-btn" title="Search">
-                                <i class="icon-search"></i>
-                            </button>
-                        </div>
-                        <input type="hidden" name="task" value="search" />
-                        <input type="hidden" name="option" value="com_search" />
-                        <input type="hidden" name="Itemid" value="0" />
-                    </form>
-                </div>
-            </div> 
-        </section>
+			<div class="container">
+				<div id="sp-logo">
+					<a href="../" class="logo-wrapper">
+						<div class="logo"></div>
+					</a>
+					<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+						aria-controls="sp-main-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<nav id="sp-main-menu">
+					<ul class="sp-menu" id="mainMenuList">
+						<li class="menu-item"><a href="../" title="Home">Home</a></li>
+						<li class="menu-item"><a href="about.html" title="About">About</a></li>
+						<li class="menu-item"><a href="exploration.html" title="Exploration">Exploration</a></li>
+						<li class="menu-item active"><a href="service.html" title="Services">Services</a></li>
+						<li class="menu-item"><a href="product.html" title="Products">Products</a></li>
+						<li class="menu-item"><a href="careers.html" title="Careers">Careers</a></li>
+						<li class="menu-item"><a href="contact.html" title="Contact">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div id="sp-search">
+					<form action="./" method="post" class="search-form">
+						<div class="search-wrapper">
+							<input type="text" name="searchword" id="mod-search-searchword" placeholder="Search..."
+								class="search-input" />
+							<button type="submit" class="search-btn" title="Search">
+								<i class="icon-search"></i>
+							</button>
+						</div>
+						<input type="hidden" name="task" value="search" />
+						<input type="hidden" name="option" value="com_search" />
+						<input type="hidden" name="Itemid" value="0" />
+					</form>
+				</div>
+			</div>
+		</section>
 		<section id="sp-subheader-wrapper" class=" ">
 			<div class="row-fluid" id="subheader">
 				<div id="sp-subheader" class="span12">
@@ -128,33 +150,13 @@
 											Service Division </h2>
 									</div>
 
-									<!-- <div class="icons">
-
-										<div class="btn-group pull-right">
-											<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <span
-													class="icon-cog"></span> <span class="caret"></span> </a>
-											<ul class="dropdown-menu">
-												<li class="print-icon"> <a
-														href="serviceabf8.html?tmpl=component&amp;print=1&amp;page="
-														title="Print"
-														onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"
-														rel="nofollow"><span
-															class="icon-print"></span>&#160;Print&#160;</a> </li>
-												<li class="email-icon"> <a
-														href="component/mailto/indexb551.html?tmpl=component&amp;template=shaper_corporex&amp;link=97df184ff22e8c6bc38fba76a59b2e524e1c908a"
-														title="Email"
-														onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><span
-															class="icon-envelope"></span> Email</a> </li>
-											</ul>
-										</div>
-
-									</div> -->
-
 									<div itemprop="articleBody">
 										<h4><span style="color: #0054a8;">PETRO-DRILL GLOBAL 'S DIVISIONS</span></h4>
-										<h4><img src="../images/hse.jpg" alt="" /><img src="../images/safety.jpg" alt=""
-												width="142" height="142" /><img src="../images/imgb5.jpg" alt=""
-												width="326" height="139" /></h4>
+										<h4 class="service-division">
+											<img src="../images/hse.jpg" alt="" />
+											<img src="../images/safety.jpg" alt="" width="142" height="142" />
+											<img src="../images/imgb5.jpg" alt="" width="326" height="139" />
+										</h4>
 										<h1 class="view-header__primary-heading"
 											data-automated-test="view-header-primary-heading"><span
 												class="view-header__message  view-header__message--primary"
@@ -211,13 +213,14 @@
 													come."</p>
 											</div>
 										</div>
-										<h4><img src="../images/eqipment.jpg" alt="" width="240" height="119" /><img
-												src="../images/Generator1.jpg" alt="" width="164" height="122" /><img
-												src="../images/natural-gas-well-pump-art-bc05753fe3be4122.jpg" alt=""
-												width="200" height="130" /><img
-												src="../images/CobeyHighSpeedReciprocatingCompressorPackageModel-2.jpg"
-												alt="" width="232" height="130" /><br /><span
-												style="color: #0054a8;">Equipment Procurement &amp; Supply</span></h4>
+										<h4><img src="../images/eqipment.jpg" alt="" width="240" height="119" />
+											<img src="../images/Generator1.jpg" alt="" width="164" height="122" />
+											<img src="../images/natural-gas-well-pump-art-bc05753fe3be4122.jpg" alt="" width="200" height="130" />
+											<img src="../images/CobeyHighSpeedReciprocatingCompressorPackageModel-2.jpg" alt="" width="232" height="130" />
+											<br />
+											<span
+												style="color: #0054a8;">Equipment Procurement &amp; Supply</span>
+										</h4>
 										<h1 class="view-header__primary-heading"
 											data-automated-test="view-header-primary-heading"><span
 												class="view-header__message  view-header__message--primary"
@@ -260,44 +263,51 @@
 												equipment based on practical demands of clients since 1986. The modern
 												geophysical high-tech equipment is unique and one key of success. </p>
 											<h3 class="module-title">Specific Services</h3>
-										<div class="services-process-grid">
-											<div class="service-step">
-												<div class="step-number">1</div>
-												<h4>Data Acquisition</h4>
-												<img src="../images/hydroscan.jpg" alt="Data Acquisition" />
-												<p>High-capacity subsurface reservoir data survey acquisition with advanced technology for real-time drilling planning and design.</p>
-											</div>
-											<div class="service-step">
-												<div class="step-number">2</div>
-												<h4>Data Processing &amp; Modelling</h4>
-												<img src="../images/HSC_processing.png" alt="Data Processing" />
-												<p>Advanced processing and modelling of acquired geophysical data to generate comprehensive subsurface models.</p>
-											</div>
-											<div class="service-step">
-												<div class="step-number">3</div>
-												<h4>Evaluation &amp; Visualisation</h4>
-												<div class="service-gallery">
-													<img src="../images/a3.jpg" alt="Evaluation" />
-													<img src="../images/parts2.jpg" alt="Visualization" />
+											<div class="services-process-grid">
+												<div class="service-step">
+													<div class="step-number">1</div>
+													<h4>Data Acquisition</h4>
+													<img src="../images/hydroscan.jpg" alt="Data Acquisition" />
+													<p>High-capacity subsurface reservoir data survey acquisition with
+														advanced technology for real-time drilling planning and design.
+													</p>
 												</div>
-												<p>Professional evaluation and 3D visualization of survey results for informed decision-making.</p>
-											</div>
-											<div class="service-step">
-												<div class="step-number">4</div>
-												<h4>Interpretation &amp; Documentation</h4>
-												<div class="service-gallery">
-													<img src="../images/petd7.jpg" alt="Interpretation" />
-													<img src="../images/a6.jpg" alt="Documentation" />
+												<div class="service-step">
+													<div class="step-number">2</div>
+													<h4>Data Processing &amp; Modelling</h4>
+													<img src="../images/HSC_processing.png" alt="Data Processing" />
+													<p>Advanced processing and modelling of acquired geophysical data to
+														generate comprehensive subsurface models.</p>
 												</div>
-												<p>Detailed geological-geophysical and hydrogeological interpretation with comprehensive documentation.</p>
+												<div class="service-step">
+													<div class="step-number">3</div>
+													<h4>Evaluation &amp; Visualisation</h4>
+													<div class="service-gallery">
+														<img src="../images/a3.jpg" alt="Evaluation" />
+														<img src="../images/parts2.jpg" alt="Visualization" />
+													</div>
+													<p>Professional evaluation and 3D visualization of survey results
+														for informed decision-making.</p>
+												</div>
+												<div class="service-step">
+													<div class="step-number">4</div>
+													<h4>Interpretation &amp; Documentation</h4>
+													<div class="service-gallery">
+														<img src="../images/petd7.jpg" alt="Interpretation" />
+														<img src="../images/a6.jpg" alt="Documentation" />
+													</div>
+													<p>Detailed geological-geophysical and hydrogeological
+														interpretation with comprehensive documentation.</p>
+												</div>
+												<div class="service-step">
+													<div class="step-number">5</div>
+													<h4>Interpretation &amp; Reporting</h4>
+													<p><strong>Final Report Comprises:</strong></p>
+													<p>Geological-geophysical and hydrogeological interpretation and
+														assessment of geophysical results with actionable insights for
+														exploration and development decisions.</p>
+												</div>
 											</div>
-											<div class="service-step">
-												<div class="step-number">5</div>
-												<h4>Interpretation &amp; Reporting</h4>
-												<p><strong>Final Report Comprises:</strong></p>
-												<p>Geological-geophysical and hydrogeological interpretation and assessment of geophysical results with actionable insights for exploration and development decisions.</p>
-											</div>
-										</div>
 										</div>
 										<p style="text-align: justify;"> <img src="../images/2D_GE-Canada.png" alt=""
 												width="200" height="126" /></p>
@@ -393,19 +403,21 @@
 					<div class="footer-column newsletter-column">
 						<h3>Newsletter</h3>
 						<p>Subscribe to stay updated with the latest news.</p>
-						<form id="formAcymailing90781"
-							action="service.html"
-							onsubmit="return submitacymailingform('optin','formAcymailing90781')"
-							method="post" name="formAcymailing90781">
+						<form id="formAcymailing90781" action="service.html"
+							onsubmit="return submitacymailingform('optin','formAcymailing90781')" method="post"
+							name="formAcymailing90781">
 							<div class="newsletter-form">
-								<input type="email" name="user[email]" placeholder="Enter your email" class="newsletter-input" required />
+								<input type="email" name="user[email]" placeholder="Enter your email"
+									class="newsletter-input" required />
 								<button type="submit" class="newsletter-btn">Subscribe</button>
 							</div>
 							<input type="hidden" name="ajax" value="0" />
 							<input type="hidden" name="ctrl" value="sub" />
 							<input type="hidden" name="task" value="notask" />
-							<input type="hidden" name="redirect" value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
-							<input type="hidden" name="redirectunsub" value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
+							<input type="hidden" name="redirect"
+								value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
+							<input type="hidden" name="redirectunsub"
+								value="https%3A%2F%2Fpetrodrill-global.com%2Fv2%2Findex.php%2Fabout" />
 							<input type="hidden" name="option" value="com_acymailing" />
 							<input type="hidden" name="hiddenlists" value="1" />
 							<input type="hidden" name="acyformname" value="formAcymailing90781" />
@@ -418,7 +430,8 @@
 		<footer id="sp-footer-wrapper">
 			<div class="container">
 				<div id="footer">
-					<div id="sp-footer1" class="footer-bottom"><span class="copyright">Copyright © 2026 - PetroDrill Global Limited.</span><span class="designed-by">Designed by Dawn Global </span></div>
+					<div id="sp-footer1" class="footer-bottom"><span class="copyright">Copyright © 2026 - PetroDrill
+							Global Limited.</span><span class="designed-by">Designed by Dawn Global </span></div>
 				</div>
 			</div>
 		</footer>
